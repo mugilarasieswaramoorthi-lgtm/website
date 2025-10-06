@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNM Restaurant'S Administration</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ad3333;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    h1 {
+        background-color: #ad2a35;
+        color: white;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    nav {
+        margin: 20px 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: rgb(158, 47, 47);
+        background-color: #f2ecec;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .gallery-item {
+        flex: 1 1 45%; 
+        max-width: 45%;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .gallery-item img {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item img:hover {
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 600px) {
+        .gallery-item {
+            flex: 1 1 100%; 
+            max-width: 100%;
+        }
+    }
+
+    footer {
+        margin-top: 30px;
+        padding: 15px;
+        background-color: #ad3434;
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+    <h1>MNM RESTAURANT'S ADMINISTRATION</h1>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="administration.html">Administration</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h2>OUR ADMINISTRATORS</h2>
+    
+
+    <div class="gallery">
+        <div><img src="trump founder.jpg" alt="FOUNDER"></div>
+        <div><img src="modi cofounder.jpg" alt="CO-FOUNDER"></div>
+        <div><img src="server 1.jpg" alt="SERVER 1"></div>
+        <div><img src="server 2.jpg" alt="SERVER 2"></div>
+        <div><img src="chef 1.jpg" alt="CHEF 1"></div>
+        <div><img src="chef 2.jpg" alt="CHEF 2"></div>
+    </div>
+
+    <footer>
+        <p>Designed by MNM</p>
+    </footer>
+
+</body>
+</html>
